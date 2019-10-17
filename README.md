@@ -127,7 +127,7 @@ miles of roadway each town has within its borders.
   - That's not very pretty, so we can use a more complex expression to combine the name with a rounded form of the length:
     `"NAME" || '\n' || round("LENGTH" / 1609.34) || ' miles'`
     
-Note that the || operator is used to join text strings. Watch out for the quotes! Double quotes are used around column names, and single quotes around text. The '\n' represents a newline character.
+Note that the `||` operator is used to join text strings. Watch out for the quotes! Double quotes are used around column names, and single quotes around text. The '\n' represents a newline character.
 
 
 Raster data
