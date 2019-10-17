@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE metadata SYSTEM "http://fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Tompkins County ITS GIS Division</origin>
+        <pubdate>2013</pubdate>
+        <title>Polling Places, Tompkins County NY, 2013</title>
+        <geoform>vector digital data</geoform>
+        <onlink>https://cugir.library.cornell.edu/catalog/cugir-008157</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>Point locations of 2013-2014 polling places in Tompkins
+                County, New York.</abstract>
+      <purpose>To locate places where Tompkins County voters can vote in
+                local, county, state and national elections.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>2013</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+          <bounding>
+            <westbc>-76.667667</westbc>
+            <eastbc>-76.291542</eastbc>
+            <northbc>42.612438</northbc>
+            <southbc>42.313201</southbc>
+          </bounding>
+        </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>polling places</themekey>
+        <themekey>elections</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>society</themekey>
+      </theme>
+      <theme>
+              <themekt>CUGIR Category</themekt>
+              <themekey>society</themekey>
+            </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Tompkins County, New York</placekey>
+      </place>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>None</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Tompkins County ITS - GIS Division</cntorg>
+          <cntper>Svetla Borovska</cntper>
+        </cntorgp>
+        <cntpos>GISP</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>128 East Buffalo Street</address>
+          <city>Ithaca</city>
+          <state>New York</state>
+          <postal>14850</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>(607) 274-5416</cntvoice>
+        <cntemail>gis@tompkins-co.org</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <browse>
+              <browsen>https://s3.amazonaws.com/cugir-data/00/81/57/preview.png</browsen>
+              <browsed>preview of the dataset</browsed>
+              <browset>PNG</browset>
+            </browse>
+    <datacred>Board of Elections. Tompkins County ITS - GIS
+            Division.</datacred>
+    <native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1;
+            Esri ArcGIS 10.1.1.3143</native>
+  </idinfo>
+  <dataqual>
+    <logic>Unknown</logic>
+    <complete>Unknown</complete>
+    <lineage>
+      <procstep>
+        <procdesc>Dataset created.</procdesc>
+        <procdate>2013</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+          <sdtsterm>
+            <sdtstype>Point</sdtstype>
+            <ptvctcnt>39</ptvctcnt>
+          </sdtsterm>
+        </ptvctinf>
+      </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <mapproj>
+          <mapprojn>NAD 1983 StatePlane New York Central FIPS 3102
+                        Feet</mapprojn>
+          <transmer>
+            <sfctrmer>0.9999375</sfctrmer>
+            <longcm>-76.58333333333333</longcm>
+            <latprjo>40.0</latprjo>
+            <feast>820208.3333333333</feast>
+            <fnorth>0.0</fnorth>
+          </transmer>
+        </mapproj>
+        <planci>
+          <plance>coordinate pair</plance>
+          <coordrep>
+            <absres>0.0000000072859718258655464</absres>
+            <ordres>0.0000000072859718258655464</ordres>
+          </coordrep>
+          <plandu>foot_us</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>TompkinsPollingPlaces2013</enttypl>
+        <enttypd>Tompkins County polling places for 2013-2014.</enttypd>
+        <enttypds>Tompkins County ITS: GIS Division</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>internal ID</attrdef>
+        <attrdefs>Tompkins County ITS: GIS Division</attrdefs>
+        <attrdomv>
+          <udom>number</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PRIM_NAME</attrlabl>
+        <attrdef>Primary name of the facility.</attrdef>
+        <attrdefs>Tompkins County ITS: GIS Division</attrdefs>
+        <attrdomv>
+          <udom>Text string</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SEC_NAME</attrlabl>
+        <attrdef>Secondary name of the facility.</attrdef>
+        <attrdefs>Tompkins County ITS: GIS Division</attrdefs>
+        <attrdomv>
+          <udom>Text string</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ADDRESS</attrlabl>
+        <attrdef>Physical Address of the Facility (number and
+                    streetname)</attrdef>
+        <attrdefs>Tompkins County Board of Elections</attrdefs>
+        <attrdomv>
+          <udom>Text string</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ZIP</attrlabl>
+        <attrdef>Zip code in which the facility is located.</attrdef>
+        <attrdefs>Tompkins County Board of Elections</attrdefs>
+        <attrdomv>
+          <udom>5-digit number</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>UID</attrlabl>
+        <attrdef>Required feature id generated by software for online
+                    ArcIMS application</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Positive integers</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Comments</attrlabl>
+        <attrdef>Any notes related to the polling places, usually the
+                    municipality.</attrdef>
+        <attrdefs>Tompkins County ITS: GIS Division</attrdefs>
+        <attrdomv>
+          <udom>Text string</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>URL</attrlabl>
+        <attrdef>Link to Google Map of the polling place.</attrdef>
+        <attrdefs>Tompkins County ITS: GIS Division</attrdefs>
+        <attrdomv>
+          <udom>Text string</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+        <distrib>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Albert R. Mann Library</cntorg>
+            </cntorgp>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>Cornell University</address>
+              <city>Ithaca</city>
+              <state>New York</state>
+              <postal>14853</postal>
+            </cntaddr>
+            <cntvoice>607-255-5406</cntvoice>
+            <cntemail>mann-ref@cornell.edu</cntemail>
+          </cntinfo>
+        </distrib>
+        <distliab>Cornell University provides these geographic data "as is". Cornell
+          University makes no guarantee or warranty concerning the accuracy of
+          information contained in the geographic data. Cornell University further
+          makes no warranty either expressed or implied, regarding the condition of
+          the product or its fitness for any particular purpose. The burden for
+          determining fitness for use lies entirely with the user. Although these
+          files have been processed successfully on computers at Cornell University,
+          no warranty is made by Cornell University regarding the use of these data
+          on any other system, nor does the fact of distribution constitute or imply
+          any such warranty.</distliab>
+        <stdorder>
+        <digform>
+            <digtinfo>
+              <formname>Shapefile</formname>
+              <formcont>zipped shapefile</formcont>
+              <filedec>zip</filedec>
+              <transize>0.02</transize>
+            </digtinfo>
+            <digtopt>
+              <onlinopt>
+                <computer>
+                  <networka>
+                    <networkr>https://s3.amazonaws.com/cugir-data/00/81/57/cugir-008157.zip</networkr>
+                  </networka>
+                </computer>
+              </onlinopt>
+            </digtopt>
+          </digform><digform>
+            <digtinfo>
+              <formname>metadata</formname>
+              <formcont>FGDC XML metadata</formcont>
+            </digtinfo>
+            <digtopt>
+              <onlinopt>
+                <computer>
+                  <networka>
+                    <networkr>https://s3.amazonaws.com/cugir-data/00/81/57/fgdc.xml</networkr>
+                  </networka>
+                </computer>
+              </onlinopt>
+            </digtopt>
+          </digform><digform>
+            <digtinfo>
+              <formname>HTML metadata</formname>
+              <formcont>FGDC HTML metadata</formcont>
+            </digtinfo>
+            <digtopt>
+              <onlinopt>
+                <computer>
+                  <networka>
+                    <networkr>https://s3.amazonaws.com/cugir-data/00/81/57/fgdc.html</networkr>
+                  </networka>
+                </computer>
+              </onlinopt>
+            </digtopt>
+          </digform><digform>
+                <digtinfo>
+                  <formname>KML</formname>
+                  <formcont>generated KML, via WFS</formcont>
+                </digtinfo>
+                <digtopt>
+                  <onlinopt>
+                    <computer>
+                      <networka>
+                        <networkr>https://cugir.library.cornell.edu/geoserver/cugir/wfs?version=1.0.0&amp;request=GetFeature&amp;typeName=cugir008157&amp;outputFormat=application%2Fvnd.google-earth.kml%2Bxml</networkr>
+                      </networka>
+                    </computer>
+                  </onlinopt>
+                </digtopt>
+              </digform><digform>
+            <digtinfo>
+              <formname>GeoJSON</formname>
+              <formcont>generated GeoJSON, via WFS</formcont>
+            </digtinfo>
+            <digtopt>
+              <onlinopt>
+                <computer>
+                  <networka>
+                    <networkr>https://cugir.library.cornell.edu/geoserver/cugir/wfs?version=1.0.0&amp;request=GetFeature&amp;typeName=cugir008157&amp;outputFormat=application%2Fjson</networkr>
+                  </networka>
+                </computer>
+              </onlinopt>
+            </digtopt>
+          </digform><digform>
+            <digtinfo>
+              <formname>OGC:WMS</formname>
+              <formcont>WMS, from GeoServer</formcont>
+            </digtinfo>
+            <digtopt>
+              <onlinopt>
+                <computer>
+                  <networka>
+                    <networkr>https://cugir.library.cornell.edu/geoserver/cugir/wms?version=1.1.0&amp;request=GetMap&amp;layers=cugir008157&amp;bbox=-76.67895075,42.30422389,-76.28025825,42.62141511&amp;width=256&amp;height=203&amp;srs=EPSG:4326&amp;format=image/png</networkr>
+                  </networka>
+                </computer>
+              </onlinopt>
+            </digtopt>
+          </digform><fees>None</fees></stdorder>
+      </distinfo>
+  <metainfo>
+      <metd>20171013</metd>
+      <metc>
+        <cntinfo>
+          <cntorgp>
+            <cntorg>Albert R. Mann Library</cntorg>
+          </cntorgp>
+          <cntaddr>
+            <addrtype>mailing and physical</addrtype>
+            <address>Albert R. Mann Library</address>
+            <city>Ithaca</city>
+            <state>New York</state>
+            <postal>14853</postal>
+            <country>USA</country>
+          </cntaddr>
+          <cntvoice>607-255-5406</cntvoice>
+          <cntemail>mann-ref@cornell.edu</cntemail>
+        </cntinfo>
+      </metc>
+      <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+      <metstdv>FGDC-STD-001-1998</metstdv>
+      <mettc>local time</mettc>
+    </metainfo>
+</metadata>
