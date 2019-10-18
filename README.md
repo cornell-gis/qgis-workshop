@@ -30,7 +30,7 @@ We will explore several common types of GIS data, using the following example da
 Points
 ------
 
-Points, lines, and polygons are different types of "vector" data, which can be stored in many different file formats.  Shapefiles are probably the most common geospatial data format found on the Internet, but the shapefile format dates from the early 1990s, which is why there are multiple component files (.shp, .dbf, .shx, .prj, and sometimes others).  To add a shapefile to QGIS, we just need to select the .shp file and QGIS will take care of the rest.  Shapefiles also have other quirks, mostly notably a 10-character limit for attribute names.  Learn more at http://switchfromshapefile.org/
+Points, lines, and polygons are different types of "vector" data, which can be stored in many different file formats.  Shapefiles are probably the most common geospatial data format found on the Internet, but the shapefile format dates from the early 1990s, which is why there are multiple component files (.shp, .dbf, .shx, .prj, and sometimes others).  To add a shapefile to QGIS, we just need to select the .shp file and QGIS will take care of the rest.  Shapefiles also have other quirks, mostly notably a 10-character limit for attribute names.  Learn more at <http://switchfromshapefile.org/>
 
 - Load pollingplaces.shp -- click "Data Source Manager" button (also in Layer menu), select "Vector" tab on left, click the "..." to browse to select the "pollingplaces.shp" file
 - Open the Layer Styling dock -- colorful paintbrush icon at top left of the Layers panel
@@ -82,7 +82,7 @@ Lines are another type of "vector" data.
 Polygons
 --------
 
-Polygons are yet another type of "vector" data.  This time, we'll explore a geopackage of towns in New York state.  GeoPackage is a modern geospatial file format designed to overcome the limitations of shapefiles.  Learn more at http://www.geopackage.org/
+Polygons are yet another type of "vector" data.  This time, we'll explore a geopackage of towns in New York state.  GeoPackage is a modern geospatial file format designed to overcome the limitations of shapefiles.  Learn more at <http://www.geopackage.org/>
 
 - Load towns.gpkg
 - Style -- open the styling dock, then click the "simple fill" symbol
