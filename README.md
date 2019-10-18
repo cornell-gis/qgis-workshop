@@ -1,6 +1,6 @@
 # Intro to QGIS
 
-Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University. Revised 2019-10-17.
+Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University. Revised 2019-10-18.
 
 QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.
 - Official QGIS site: http://qgis.org/
@@ -17,16 +17,20 @@ Before we begin
 Examples of common types of GIS data
 ------------------------------------
 
+We will explore several common types of GIS data, using the following example datasets:
+
 | DATA TYPE | FILENAME | CRS (Coordinate Reference System) |
 | --------- | -------- | --------------------------------- |
 | points | pollingplaces.shp | EPSG:2261 = NAD83 / New York Central (ftUS) |
 | lines | streets.shp | EPSG:26918 = NAD83 / UTM zone 18N (meters) |
-| polygons | countydivs.shp | EPSG:4269 = NAD83 (latitude/longitude) |
+| polygons | towns.gpkg | EPSG:4269 = NAD83 (latitude/longitude) |
 | raster | elevation.tif | EPSG:26718 = NAD27 / UTM zone 18N (meters) |
 
 
 Points
 ------
+
+Points, lines, and polygons are different types of "vector" data, which can be stored in many different file formats.  Shapefiles are probably the most common geospatial data format found on the Internet, but the shapefile format dates from the early 1990s, which is why there are multiple component files (.shp, .dbf, .shx, .prj, and sometimes others).  To add a shapefile to QGIS, we just need to select the .shp file and QGIS will take care of the rest.  Shapefiles also have other quirks, mostly notably a 10-character limit for attribute names.  Learn more at http://switchfromshapefile.org/
 
 - Load pollingplaces.shp -- click "Data Source Manager" button (also in Layer menu), select "Vector" tab on left, click the "..." to browse to select the "pollingplaces.shp" file
 - Open the Layer Styling dock -- colorful paintbrush icon at top left of the Layers panel
@@ -38,6 +42,7 @@ Points
   - Table and map are linked -- select a row, see point highlighted on map, and vice versa
 - To find out what CRS (coordinate reference system) is being used:
   - Right-click > Properties... Source tab
+
 
 Plugins: QuickMapServices
 -------------------------
@@ -51,6 +56,9 @@ Sometimes it is useful to load a global base layer from the web, to add context 
 
 Lines
 -----
+
+Lines are another type of "vector" data.
+
 - Load streets.shp -- as before, or just drag the .shp file onto the map
 - Drag pollingplaces to top of streets (or drag streets below pollingplaces), and turn off the Google layer
 - Info -- click "Identify Features" tool, select the streets layer, then click a street
@@ -74,7 +82,9 @@ Lines
 Polygons
 --------
 
-- Load countydivs.shp
+Polygons are yet another type of "vector" data.  This time, we'll explore a geopackage of towns in New York state.  GeoPackage is a modern geospatial file format designed to overcome the limitations of shapefiles.  Learn more at http://www.geopackage.org/
+
+- Load towns.gpkg
 - Style -- open the styling dock, then click the "simple fill" symbol
   - fill style = no brush (so that we can see through the polygons to the layers below)
   - stroke width = 2 mm
@@ -102,7 +112,7 @@ miles of roadway each town has within its borders.
 - "Processing" menu > Toolbox
   - Search for "Sum line lengths" in the processing toolbox
   - Lines = streets
-  - Polygons = countydivs
+  - Polygons = `towns`
     - Check the "Selected features only" option
   - Note that we will "create a temporary layer" containing the output (although saving directly to a new file is also an option)
   - Click "Run"
@@ -116,17 +126,17 @@ miles of roadway each town has within its borders.
   - Click "OK"
   - Notice that the computer chip (bug) icon has gone away
   - Right-click "Line length" layer name > Rename Layer to "townroads"
-- Copy the style from countydivs to the new "townroads" layer
-  - Right-click countydivs > Styles > Copy style > All Style Categories
+- Copy the style from towns to the new "townroads" layer
+  - Right-click towns > Styles > Copy style > All Style Categories
   - Right-click townroads > Styles > Paste style > All Style Categories
-  - Turn off the countydivs layer by unchecking its box in the Layers list
+  - Turn off the towns layer by unchecking its box in the Layers list
 - Add the total road lengths to our map labels
   - Open the styling dock to edit the townroads labels
   - Instead of just picking a column to use as the label, we can type an expression to convert from meters to miles:
     `LENGTH / 1609.34`
-  - That's not very pretty, so we can use a more complex expression to combine the name with a rounded form of the length:
+  - We don't need to see all those decimal places, so we can use a more complex expression to combine the name with a rounded form of the length:
     `"NAME" || '\n' || round("LENGTH" / 1609.34) || ' miles'`
-    
+
 Note that the `||` operator is used to join text strings. Watch out for the quotes! Double quotes are used around column names, and single quotes around text. The '\n' represents a newline character.
 
 
