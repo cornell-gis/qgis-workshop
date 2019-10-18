@@ -120,9 +120,10 @@ miles of roadway each town has within its borders.
   - Notice that the new "Line length" layer has a computer chip (also looks like a bug) next to it
   - Right-click > Open Attribute Table
   - Scroll to the right side of the table to see the new "LENGTH" and "COUNT" columns. The LENGTH column contains the total length of streets in that town. (The unit is meters, because that was the unit used by the "streets" CRS.)
-- Save the temporary results to a file
+- Save the temporary results to a geopackage
   - Right-click the "Line length" layer name > Make Permanent
-  - Specify the output file by clicking the "..." button. Save it as a geopackage "townroads.gpkg" within your workshop folder
+  - Format = GeoPackage
+  - Specify the output file by clicking the "..." button. Save it as "townroads.gpkg" within your workshop folder
   - Click "OK"
   - Notice that the computer chip (bug) icon has gone away
   - Right-click "Line length" layer name > Rename Layer to "townroads"
