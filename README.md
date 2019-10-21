@@ -3,13 +3,13 @@
 Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University. Revised 2019-10-18.
 
 QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.
-- Official QGIS site: http://qgis.org/
-- QGIS Map Showcase: https://www.flickr.com/groups/qgis/pool/
+- Official QGIS site: <http://qgis.org/>
+- QGIS Map Showcase: <https://www.flickr.com/groups/qgis/pool/>
 
 
 Before we begin
 ---------------
-- Download the workshop data from https://github.com/cornell-gis/qgis-workshop/archive/v1.zip
+- Download the workshop data from <https://github.com/cornell-gis/qgis-workshop/archive/v1.zip>
 - When download is complete, open your downloads folder
 - Right-click the .zip file > Extract All...
 
