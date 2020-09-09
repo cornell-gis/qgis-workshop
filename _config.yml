@@ -1,0 +1,3 @@
+kramdown:
+  # turn off so-called "smart-quotes"
+  smart_quotes: ["apos", "apos", "quot", "quot"]
