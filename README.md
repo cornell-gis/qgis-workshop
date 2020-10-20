@@ -1,7 +1,7 @@
 # Intro to QGIS
 
-Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University.\
-<https://cornell-gis.github.io/qgis-workshop/> (revised 2020-10-19)
+Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University (revised 2020-10-19)
+- <https://cornell-gis.github.io/qgis-workshop/>
 
 This workshop will cover basic tasks using QGIS: loading data, changing the styles used to display the data on a map, installing plugins, using processing tools to do basic analysis, and exporting a finished map image.
 
@@ -73,7 +73,7 @@ Notice how the labels change as you zoom in and out of the map.  A mouse with a 
 - Pro tip: hold down the CTRL key as you zoom for finer zoom control
 
 
-# Save your project!
+## Save your project!
 
 Save "mymap.qgz" to the folder that also contains your data -- for example, within the "qgis-workshop" folder.  That way, you can zip up or move the containing folder around while keeping your map and data intact. The .qgz project file contains your map styles and pointers to your data files, **but not the data itself**.  If you move or rename your data files, your project file won't know where to find them.
 
@@ -239,7 +239,7 @@ Let's create a hillshaded version of this layer. In the past, you had to create 
 - Set the blending mode to "multiply" (which will let us also see the colorized version underneath)
 
 
-# Plugins: Value Tool
+## Plugins: Value Tool
 
 The "Value Tool" plugin will let us see the values of all the visible raster layers as we move the cursor across the map, which is much quicker than using the "Identify Features" tool.
 
@@ -250,7 +250,7 @@ Install the plugin:
 Once installed, the "Value Tool" icon will appear in your toolbars.  It looks like a green version of the "Identify Features" icon.  After clicking, you may need to enable it on the panel that appears.  Try it with the elevation raster.
 
 
-# Other Plugins
+## Other Plugins
 
 There are many other plugins available for handling special data formats, managing tabular data, performing analysis, creating time-based animations, and interfacing with other programs. Some of our other favorite plugins include:
 - mmqgis - a suite of vector, CSV, and geocoding tools
@@ -263,19 +263,29 @@ There are many other plugins available for handling special data formats, managi
 - Visualist - spatial statistics and flow mapping
 
 
-# Other things to try (time permitting)
+# Exporting your map to an image file
 
-- Create contour lines using Raster menu > Extraction > Contour
-- Export the the current map view as an image or PDF
-  - Project menu > Import/Export
-- For more complex print layouts
-  - Project menu > New Print Layout
-  - Choose a title (optional)
-  - Add Item menu > Add Map, then drag a rectangle on the page
-  - Edit menu > Move Content (or press C) to pan/zoom the content within the page
-    Pro tip: hold the Ctrl down while using your mouse's scroll wheel for finer zoom adjustment
-  - Add legend, scale bar, etc. (from the Add Item menu)
-  - Layout menu > Export as PDF
+To export the current map view to an image file:
+- Project menu > Import/Export > Export Map to Image...
+- Update the extent or leave as is
+- Increase the resolution (try 300dpi)
+- Save as a .png file
+
+
+# Exporting your map to a PDF file
+
+Exporting to PDF is useful if you are going to print your map, or if you want to do further work in a program like Inkscape or Adobe Illustrator.  The PDF will keep separate layers for each data layer.  Vector layers will remain vectors, and raster layers will remain raster.
+
+- Project menu > Import/Export > Export Map to PDF...
+- Check the settings, especially the resolution if your map includes raster layers, including basemaps
+
+It is also possible to create a more detailed map layout, with things like a title, text boxes, a north star, and legend.  We won't go into the details here, but the general process is:
+- Project menu > New Print Layout
+- Choose a title (optional)
+- Add Item menu > Add Map, then drag a rectangle on the page
+- Edit menu > Move Content (or press C) to pan/zoom the content within the page
+- Add legend, scale bar, etc. (from the Add Item menu)
+- Layout menu > Export as PDF
 
 
 # Other QGIS resources
