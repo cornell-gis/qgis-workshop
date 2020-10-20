@@ -1,0 +1,4 @@
+Fire Departments and Stations in Tompkins County, NY
+
+Shapefile downloaded from:
+https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/firestations
