@@ -9,16 +9,16 @@ This workshop will cover basic tasks using QGIS: loading data, changing the styl
 # Before the workshop begins
 
 **Install QGIS on your computer**.  QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.  In most cases, you can download and install QGIS on your own computer in under 10 minutes.
-- https://qgis.org/en/site/forusers/download.html
+- <https://qgis.org/en/site/forusers/download.html>
 
 Once you have installed QGIS, check that you can run it without any errors, and also make sure that you have a "Processing" menu.  (Some older Macs occasionally have issues with the Python version that is installed with QGIS.)  If you can see the "Processing" menu, then you should be good to go!
 
 Alternately, Cornell students and staff can use QGIS via **Apps on Demand**, which provides remote access to the program through your web browser.
-- Apps on Demand: https://canvas.cornell.edu/enroll/64TDRK
-- Short video (6 minutes) showing how to set up and connect to your data: https://www.youtube.com/watch?v=LuIDeBJfcNU
+- Apps on Demand: <https://canvas.cornell.edu/enroll/64TDRK>
+- Short video (6 minutes) showing how to set up and connect to your data: <https://www.youtube.com/watch?v=LuIDeBJfcNU>
 
 **Download and unzip the data files for this workshop**:
-- https://github.com/cornell-gis/qgis-workshop/archive/main.zip
+- <https://github.com/cornell-gis/qgis-workshop/archive/main.zip>
 - When download is complete, open your downloads folder
 - Right-click the .zip file > Extract All...
 
@@ -277,6 +277,11 @@ There are many other plugins available for handling special data formats, managi
   - Add legend, scale bar, etc. (from the Add Item menu)
   - Layout menu > Export as PDF
 
-- Official QGIS site: <http://qgis.org/>
-- QGIS Map Showcase (for inspiration): <https://www.flickr.com/groups/qgis/pool/>
 
+# Other QGIS resources
+
+- [QGIS project website](http://qgis.org/)
+- [QGIS training manual](https://docs.qgis.org/latest/en/docs/training_manual/)
+- [QGIS Map Showcase](https://www.flickr.com/groups/qgis/pool/) (for inspiration)
+- [QGIS Tutorials and Tips](http://www.qgistutorials.com/en/) by Ujaval Gandhi
+- [Videos from QGIS North America](https://www.youtube.com/channel/UCLQd1MsyWWPoIi6rNLUCjhg/videos) 2020 virtual conference
