@@ -8,7 +8,7 @@ This workshop will cover basic tasks using QGIS: loading data, changing the styl
 
 # Before the workshop begins
 
-**Install QGIS on your computer**.  QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.  In most cases, you can download and install QGIS on your own computer in under 10 minutes.
+If you plan to use your own computer, **install QGIS on your computer before the workshop**.  QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.  In most cases, you can download and install QGIS on your own computer in under 10 minutes.  (For Windows, we recommend using the "Standalone Installer".)
 - <https://qgis.org/en/site/forusers/download.html>
 
 Once you have installed QGIS, check that you can run it without any errors, and also make sure that you have a "Processing" menu.  (Some older Macs occasionally have issues with the Python version that is installed with QGIS.)  If you can see the "Processing" menu, then you should be good to go!
