@@ -1,6 +1,6 @@
 # Intro to QGIS
 
-Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University (revised 2021-09-22)
+Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University (revised 2020-10-19)
 - <https://cornell-gis.github.io/qgis-workshop/>
 
 This workshop will cover basic tasks using QGIS: loading data, changing the styles used to display the data on a map, installing plugins, using processing tools to do basic analysis, and exporting a finished map image.
@@ -224,7 +224,7 @@ For maximum visibility of all layers, we would usually want to move a raster lay
 The default style of a raster layer is a simple grayscale gradient from black to white.  Let's apply a color gradient:
 - Open the styling dock and select the "elevation" layer
 - Change "Singleband gray" to "Singleband pseudocolor"
-- Click the Color Ramp down-arrow and select "Magma"
+- Click the Color Ramp down-arrow and select "Turbo"
 
 Try using the "Identify Features" tool to check the elevation at different points on the map.  Are the heights in feet or meters?
 
@@ -287,12 +287,10 @@ It is also possible to create a more detailed map layout, with things like a tit
 - Layout menu > Export as PDF
 
 
-# Other resources
+# Other QGIS resources
 
 - [QGIS project website](http://qgis.org/)
 - [QGIS training manual](https://docs.qgis.org/latest/en/docs/training_manual/)
 - [QGIS Map Showcase](https://www.flickr.com/groups/qgis/pool/) (for inspiration)
 - [QGIS Tutorials and Tips](http://www.qgistutorials.com/en/) by Ujaval Gandhi
 - [Videos from QGIS North America](https://www.youtube.com/channel/UCLQd1MsyWWPoIi6rNLUCjhg/videos) 2020 virtual conference
-- [Projection Playground](https://observablehq.com/@floledermann/projection-playground)
-- [Cornell GIS LibGuide](https://guides.library.cornell.edu/gis)
