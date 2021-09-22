@@ -224,7 +224,7 @@ For maximum visibility of all layers, we would usually want to move a raster lay
 The default style of a raster layer is a simple grayscale gradient from black to white.  Let's apply a color gradient:
 - Open the styling dock and select the "elevation" layer
 - Change "Singleband gray" to "Singleband pseudocolor"
-- Click the Color Ramp down-arrow and select "Magma"
+- Click the Color Ramp down-arrow and select "Turbo"
 
 Try using the "Identify Features" tool to check the elevation at different points on the map.  Are the heights in feet or meters?
 
