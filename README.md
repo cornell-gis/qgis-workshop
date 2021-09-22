@@ -43,11 +43,8 @@ Load the fire station points:
 - Click "Data Source Manager" button (also in Layer menu), select "Vector" tab on left, click the "..." to browse to the `data/fire-stations` folder and open the `FireStations.shp` file
 - Click "Add", then close the data source manager
 
-QGIS may prompt you with a question about coordinate system transformations.  It's usually okay to accept the default, but sometimes there may be a more accurate transformation specific to the area you are mapping.
-- In the "Select Transformation" dialog, click "OK" (or else look for a transformation specific to New York)
-
 Change the layer style by opening the Layer Styling panel - colorful paintbrush icon at top left of the Layers panel
-- Change the color (blue) -- to get back to the other style options, use the back arrow after selecting a color
+- Change the color (light blue) -- to get back to the other style options, use the back arrow after selecting a color
 - Change the size (3) -- note the unit is mm
 - Click "Simple fill" to change other properties, like stroke (outline) color and width
 
@@ -56,18 +53,17 @@ Get information about a point:
 
 View information about all the fire stations as a table:
 - Right-click layer in Layers pane > Open Attribute Table
-- Click the "SUBADDRESS" column header to sort by that column
+- Click a column header to sort by that column
 
 The table and map are linked.
 - Select a row in the table (by clicking the row number) to see it highlighted on the map
 - To clear the selection, look for a yellowish toolbar button to "Deselect features from all layers"
 
 Add labels by clicking the label tab (yellow "abc") in the styling panel
-- Single Labels, value = SUBADDRESS
+- Single Labels, value = PLACENAME
 - 9 tabs of options!
 - 1st tab (text) - font, size, color
 - 2nd tab (formatting) - wrap lines to 16 characters
-- 8th tab (placement) - Horizontal
 
 Notice how the labels change as you zoom in and out of the map.  A mouse with a scroll wheel is highly recommended for mapping!
 - Pro tip: hold down the CTRL key as you zoom for finer zoom control
@@ -83,6 +79,9 @@ Save "mymap.qgz" to the folder that also contains your data -- for example, with
 Lines are another type of "vector" data, often used to depict linear features like rivers and streets.  Street datasets sometimes called centerlines, since the streets are often represented by one line per road, regardless of how many lanes there are.
 
 - In your computer's file browser (like Windows' File Explorer, or Mac's Finder), look in the "streets" folder, and drag the .shp file onto QGIS
+
+QGIS may prompt you with a question about coordinate system transformations.  It's usually okay to accept the default, but sometimes there may be a more accurate transformation specific to the area you are mapping.
+- In the "Select Transformation" dialog, click "OK" (or else look for a transformation specific to New York)
 
 Explore the data a bit (identify tool, attribute table), and notice the contents of the "SHIELD" column. We can use those values to control the layer style.
 - At the top of the layer styling panel, change "Single symbol" to "Categorized"
@@ -177,15 +176,15 @@ First, we are going to select just those towns that are in Tompkins County (the 
 Next, open the processing toolbox
 - "Processing" menu > Toolbox
 - Search for "Sum line lengths" in the processing toolbox
-- Lines = streets
 - Polygons = towns
 - Check the "Selected features only" option
+- Lines = streets
 - Note that we will "create a temporary layer" containing the output (although saving directly to a new file is also an option)
 - Click "Run"
 
-When the process completes, we should have a new layer called "Line length".  Notice that this layer has a computer chip icon (which also looks like a bug) next to it -- this indicates that it is a temporary layer held in memory, not saved to disk.
+When the process completes, we should have a new layer called "Line length".  Notice that this layer has a computer chip icon (which also looks like an insect) next to it -- this indicates that it is a temporary layer held in memory, not saved to disk.
 - Right-click > Open Attribute Table
-- Scroll to the right side of the table to see the new "LENGTH" and "COUNT" columns. The LENGTH column contains the total length of streets in that town. (The unit is meters, because that was the unit used by the "streets" CRS.)
+- Scroll to the right side of the table to see the new "LENGTH" and "COUNT" columns. The LENGTH column contains the total length of streets in that town. (The unit is meters, because that was the unit used by the "streets" CRS, which you can check by right-clicking the layer > Properties > Information.)
 
 Save these temporary results to a geopackage:
 - Right-click the "Line length" layer name > Make Permanent
@@ -198,7 +197,7 @@ Save these temporary results to a geopackage:
 We can copy the style from original "towns" layer to the new "townroads" layer:
 - Right-click towns > Styles > Copy style > All Style Categories
 - Right-click townroads > Styles > Paste style > All Style Categories
-- Turn off the towns layer by unchecking its box in the Layers list
+- Turn off the original towns layer by unchecking its box in the Layers list
 
 We can convert the total road lengths to miles, and add it to our map labels:
 - Open the styling dock and make sure you have the townroads layer selected
