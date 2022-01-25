@@ -13,7 +13,7 @@ If you plan to use your own computer, **install QGIS on your computer before the
 
 Once you have installed QGIS, check that you can run it without any errors, and also make sure that you have a "Processing" menu.  (Some older Macs occasionally have issues with the Python version that is installed with QGIS.)  If you can see the "Processing" menu, then you should be good to go!
 
-Alternately, Cornell students and staff can use QGIS via **Apps on Demand**, which provides remote access to the program through your web browser.
+Alternatively, Cornell students and staff can use QGIS via **Apps on Demand**, which provides remote access to the program through your web browser.  It works pretty well, but you will need to use Google Drive to access your data and save your files, as demonstrated in the video below.
 - Apps on Demand: <https://canvas.cornell.edu/enroll/64TDRK>
 - Short video (6 minutes) showing how to set up and connect to your data: <https://www.youtube.com/watch?v=LuIDeBJfcNU>
 
