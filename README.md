@@ -164,7 +164,7 @@ Update the town layer style:
 - In the layer styling for the towns layer, click "simple fill" and set the following:
   - Fill style = no brush (so that we can see through the polygons to the layers below)
   - Stroke width = 2 mm
-  - Stroke color = brown
+  - Stroke color = brown (dark orange)
   - Layer Rendering > set opacity to 50% (this will let us see the roads that run along a boundary)
 
 Add town labels:
@@ -172,7 +172,7 @@ Add town labels:
 - Change "No labels" to "Single labels"
 - Label with = NAME
 - In the "Text" sub-tab (1st from the left), change the Font ("Candara"), Style ("Bold"), and Size (20.0 points)
-- Improve legibility by going to the "Buffer" sub-tab (3rd from the left) -- check "Draw text buffer"
+- Improve legibility by going to the "Buffer" sub-tab (3rd from the left) -- check "Draw text buffer", 1.5mm white
 
 Save your project!
 
@@ -266,9 +266,12 @@ Once installed, the "Value Tool" icon will appear in your toolbars.  It looks li
 ## Other Plugins
 
 There are many other plugins available for handling special data formats, managing tabular data, performing analysis, creating time-based animations, and interfacing with other programs. Some of our other favorite plugins include:
+- GeoCoding - get point coordinates for placenames and addresses
 - mmqgis - a suite of vector, CSV, and geocoding tools
+- QNEAT3 - supplemental network analysis tools
 - QuickOSM - fetch data from OpenStreetMap
 - qgis2web - export your map as an interactive Leaflet or OpenLayers map for the web
+- Preview Mode Plugin - check how your map appears to people with color blindness
 - Profile Tool - create elevation profile lines
 - Semi-Automatic Classification - remote sensing image download and processing
 - Street View - quickly jump to the nearest Google StreetView image
