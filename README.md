@@ -48,13 +48,18 @@ Load the fire station data:
 - Check the "Sample Data" preview of the table
 - Click "Add", then close the data source manager
 
-Change the layer style by opening the Layer Styling panel - colorful paintbrush icon at top left of the Layers panel
-- Change the color (light blue) -- to get back to the other style options, use the back arrow after selecting a color
-- Change the size (3) -- note the unit is mm
+You should see a constellation of dots floating in space.  Don't worry -- we'll soon be adding more layers to make a more useful map.
+
+Let's change the layer style by opening the Layer Styling panel - colorful paintbrush icon at top left of the Layers panel
+- Change the color (light blue) -- note that there are several tabs at the top of the "Select Color" panel that offer different ways to select a color.
+- To get back to the other style options, use the back arrow after selecting a color
+- Change the size to 3 mm
 - Click "Simple fill" to change other properties, like stroke (outline) color and width
 
 Get information about a point:
-- Click "Identify Features" tool, select the FireStations layer, then click a point
+- Click "Identify Features" tool (blue circle with white "i"), select the fire_stations layer, then click a point
+
+You make better use of limited screen space, you may want to re-dock the "Identify Results" panel -- click on the panel title, drag it towards the middle of the screen and then back towards the right and drop it when the blue highlighted area takes up the full right side of the window.  Then you can switch between the "Layer Styling" and the "Identify Results" by using the tabs at the bottom.
 
 View information about all the fire stations as a table:
 - Right-click layer in Layers pane > Open Attribute Table
