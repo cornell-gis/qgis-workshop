@@ -1,6 +1,6 @@
 # Intro to QGIS
 
-Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University (revised 2021-09-22)
+Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University (revised 2022-03-07)
 - <https://cornell-gis.github.io/qgis-workshop/>
 
 This workshop will cover basic tasks using QGIS: loading data, changing the styles used to display the data on a map, installing plugins, using processing tools to do basic analysis, and exporting a finished map image.
@@ -27,12 +27,12 @@ Alternatively, Cornell students and staff can use QGIS via **Apps on Demand**, w
 
 We will explore several common types of GIS data, using the following example datasets:
 
-| DATA TYPE | FILENAME | CRS (Coordinate Reference System) |
-| --------- | -------- | --------------------------------- |
-| points | FireStations.shp | EPSG:3857 - WGS 84 / Pseudo-Mercator |
-| lines | streets.shp | EPSG:26918 = NAD83 / UTM zone 18N (meters) |
-| polygons | towns.gpkg | EPSG:4269 = NAD83 (latitude/longitude) |
-| raster | elevation.tif | EPSG:26718 = NAD27 / UTM zone 18N (meters) |
+| DATA TYPE | FILENAME          | CRS (Coordinate Reference System)          |
+| --------- | ----------------- | ------------------------------------------ |
+| points    | fire_stations.csv | EPSG:4236 = WGS 84                         |
+| lines     | streets.shp       | EPSG:26918 = NAD83 / UTM zone 18N (meters) |
+| polygons  | towns.gpkg        | EPSG:4269 = NAD83 (latitude/longitude)     |
+| raster    | elevation.tif     | EPSG:26718 = NAD27 / UTM zone 18N (meters) |
 
 
 # Points
