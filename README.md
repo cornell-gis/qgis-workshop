@@ -37,10 +37,21 @@ We will explore several common types of GIS data, using the following example da
 
 # Points
 
-Points, lines, and polygons are different types of "vector" data, which can be stored in many different file formats.  Shapefiles are probably the most common geospatial data format found on the Internet, but the shapefile format dates from the early 1990s, which is why there are multiple component files (.shp, .dbf, .shx, .prj, and sometimes others).  To add a shapefile to QGIS, we just need to select the .shp file and QGIS will take care of the rest.  Shapefiles also have other quirks, mostly notably a 10-character limit for attribute names.  Learn more at <http://switchfromshapefile.org/>
+Point data is often found in a tabular format, such as an Excel file or a CSV file.  CSV stands for "Comma-Separated Values" is the format most commonly used to transfer tabular data between different programs.  Whenever a table includes X and Y coordinates -- such as longitude and latitude -- we can use that information to display each row in the table as a point on a map.
 
-Load the fire station points:
-- Click "Data Source Manager" button (also in Layer menu), select "Vector" tab on left, click the "..." to browse to the `data/fire-stations` folder and open the `FireStations.shp` file
+Load the fire station data:
+- Click "Data Source Manager" button (also in Layer menu), select "Delimited Text" tab on left
+- Click the "..." at the top right to browse to the `data` folder and open the `fire_stations.csv` file
+- Under "Fire Format", select "CSV"
+- Under "Record and Fields Options", set the following:
+    - Number of header lines to discard = 0
+    - Check the box for "First record has field names"
+    - Check the box for "Detect field types"
+- Under "Geometry Definition", select "Point coordinates"
+    - "X field" = 'longitude'
+    - "Y field" = 'latitude'
+    - "Geometry CRS" = 'EPSG:4326 - WGS 84' (this is "standard latitude/longitude")
+- Check the "Sample Data" preview of the table
 - Click "Add", then close the data source manager
 
 Change the layer style by opening the Layer Styling panel - colorful paintbrush icon at top left of the Layers panel
@@ -76,9 +87,11 @@ Save "mymap.qgz" to the folder that also contains your data -- for example, with
 
 # Lines
 
-Lines are another type of "vector" data, often used to depict linear features like rivers and streets.  Street datasets sometimes called centerlines, since the streets are often represented by one line per road, regardless of how many lanes there are.
+Points, lines, and polygons are different types of "vector" data, which can be stored in many different file formats.  Shapefiles are probably the most common geospatial data format found on the Internet, but the shapefile format dates from the early 1990s, which is why there are multiple component files (.shp, .dbf, .shx, .prj, and sometimes others).  To add a shapefile to QGIS, we just need to select the .shp file and QGIS will take care of the rest.  Shapefiles also have other quirks, mostly notably a 10-character limit for attribute names.  Learn more at <http://switchfromshapefile.org/>
 
-- In your computer's file browser (like Windows' File Explorer, or Mac's Finder), look in the "streets" folder, and drag the .shp file onto QGIS
+Lines are a type of vector data that is often used to depict linear features like rivers and streets.  Street datasets sometimes called centerlines, since the streets are often represented by one line per road, regardless of how many lanes there are.  We can add this data using the Data Source Manager, but we can also add it just by dragging-and-dropping the file onto QGIS.
+
+- In your computer's file browser (like Windows' File Explorer, or Mac's Finder), look in the "streets" folder, and drag the streets.shp file onto QGIS
 
 QGIS may prompt you with a question about coordinate system transformations.  It's usually okay to accept the default, but sometimes there may be a more accurate transformation specific to the area you are mapping.
 - In the "Select Transformation" dialog, click "OK" (or else look for a transformation specific to New York)
