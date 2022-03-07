@@ -8,14 +8,8 @@ This workshop will cover basic tasks using QGIS: loading data, changing the styl
 
 # Before the workshop begins
 
-If you plan to use your own computer, **install QGIS on your computer before the workshop**.  QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.  In most cases, you can download and install QGIS on your own computer in under 10 minutes.  (For Windows, we recommend using the "Standalone Installer".)
+The Windows computers in Mann Library already have QGIS installed, but if you would like to use your own computer, **please install QGIS on your computer before the workshop**.  QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.  In most cases, you can download and install QGIS on your own computer in under 10 minutes.  (For Windows, we recommend using the latest version of the "Standalone Installer".)
 - <https://qgis.org/en/site/forusers/download.html>
-
-Once you have installed QGIS, check that you can run it without any errors, and also make sure that you have a "Processing" menu.  (Some older Macs occasionally have issues with the Python version that is installed with QGIS.)  If you can see the "Processing" menu, then you should be good to go!
-
-Alternatively, Cornell students and staff can use QGIS via **Apps on Demand**, which provides remote access to the program through your web browser.  It works pretty well, but you will need to use Google Drive to access your data and save your files, as demonstrated in the video below.
-- Apps on Demand: <https://canvas.cornell.edu/enroll/64TDRK>
-- Short video (6 minutes) showing how to set up and connect to your data: <https://www.youtube.com/watch?v=LuIDeBJfcNU>
 
 **Download and unzip the data files for this workshop**:
 - <https://github.com/cornell-gis/qgis-workshop/archive/main.zip>
