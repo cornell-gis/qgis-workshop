@@ -53,7 +53,7 @@ You should see a constellation of dots floating in space.  Don't worry -- we'll 
 Let's change the layer style by opening the Layer Styling panel - colorful paintbrush icon at top left of the Layers panel
 - Change the color (light blue) -- note that there are several tabs at the top of the "Select Color" panel that offer different ways to select a color.
 - To get back to the other style options, use the back arrow after selecting a color
-- Change the size to 3 mm
+- Change the size to 4 mm
 - Click "Simple fill" to change other properties, like stroke (outline) color and width
 
 Get information about a point:
@@ -139,17 +139,16 @@ Most basemaps are in a projection (CRS) called Pseudo- or Web-Mercator, EPSG:385
 
 Turn the streets layer back on, and zoom in to an intersection to see how well it aligns with the imagery.
 
+Turn on the fire station layer, and adjust the label style to improved legibility against the basemap:
+- Go to the label styles
+- 3rd tab (buffer) - Draw text buffer, 1.5mm white
+
 Since the Google Hybrid layer often has the clutter of unwanted points that distract from our fire station points, it will help to use a plainer basemap:
 - Web menu > QuickMapServices > Stamen > Stamen Toner Lite
 - Uncheck the Google Hybrid layer to hide it
 - Also hide the streets layer
 
-Turn on the fire station layer, and adjust the label style to improved legibility against the basemap:
-- Go to the label styles
-- 3rd tab (buffer) - Draw text buffer, 1.5mm white
-
-The Stamen Toner Lite layer is very light, so we could trying adding our own streets back on top if we want to emphasize the local road network.
-- In the streets style panel, adjust Layer Rendering (bottom of panel) > Opacity to control the visual weight of the streets (around 25%)
+If you want to publish a map that uses a basemap layer, be sure to credit the basemap provider with proper attribution.  There is often a link to terms of use in the layer properties.  Double-click the basemap layer name, and look at the "QGIS Server" tab for the attribution text and URL.
 
 
 # Polygons
