@@ -90,10 +90,13 @@ Points, lines, and polygons are different types of "vector" data, which can be s
 
 Lines are a type of vector data that is often used to depict linear features like rivers and streets.  Street datasets sometimes called centerlines, since the streets are often represented by one line per road, regardless of how many lanes there are.  We can add this data using the Data Source Manager, but we can also add it just by dragging-and-dropping the file onto QGIS.
 
-- In your computer's file browser (like Windows' File Explorer, or Mac's Finder), look in the "streets" folder, and drag the streets.shp file onto QGIS
+- In your computer's file browser (like Windows' File Explorer, or Mac's Finder), look in the "data" folder, and drag the `streets.shp` file onto QGIS
 
 QGIS may prompt you with a question about coordinate system transformations.  It's usually okay to accept the default, but sometimes there may be a more accurate transformation specific to the area you are mapping.
 - In the "Select Transformation" dialog, click "OK" (or else look for a transformation specific to New York)
+
+Our map is still using the CRS from the first layer we loaded, which uses latitude/longitude degrees, which are not the same distance east-west and north-south, so the map may look a bit stretched out.  Let's use the coordinate system of our roads layer, which is based on meters:
+- Right-click the "streets" layer name > Layer CRS > Set Project CRS from Layer
 
 Explore the data a bit (identify tool, attribute table), and notice the contents of the "SHIELD" column. We can use those values to control the layer style.
 - At the top of the layer styling panel, change "Single symbol" to "Categorized"
@@ -101,10 +104,10 @@ Explore the data a bit (identify tool, attribute table), and notice the contents
 
 Random colors are assigned to each of the values, which is not really what we want. You can shift-click to select all the values, then right-click to change the color for all the values at once.
 - Change all the road colors to black
-- Double-click the symbol for "C" (county roads) -- change the width to 0.75mm (then click the back arrow at the top of the styling panel to go back to the other options)
+- Double-click the symbol for "C" (county roads) -- change the width to 0.5mm (then click the back arrow at the top of the styling panel to go back to the other options)
 - Ctrl-click the "S" and "SH" values to select them
     - Right-click > Merge categories
-    - Set the symbol to 1.5mm width
+    - Set the symbol to 1.0mm width
 
 Try turning on labels for the streets layer and zooming in and out a bit.
 
