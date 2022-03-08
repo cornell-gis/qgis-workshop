@@ -63,7 +63,7 @@ Get information about a point:
 You make better use of limited screen space, you may want to re-dock the "Identify Results" panel -- click on the panel title, drag it towards the middle of the screen and then back towards the right and drop it when the blue highlighted area takes up the full right side of the window.  Then you can switch between the "Layer Styling" and the "Identify Results" by using the tabs at the bottom.
 
 View information about all the fire stations as a table:
-- Right-click layer in Layers pane > Open Attribute Table
+- In the Layers pane, right-click the "fire_stations" layer name > Open Attribute Table
 - Click a column header to sort by that column
 
 The table and map are linked.
