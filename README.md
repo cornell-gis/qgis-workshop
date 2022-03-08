@@ -54,7 +54,7 @@ Let's change the layer style by opening the Layer Styling panel - colorful paint
 - Change the color (light blue) by clicking the color bar -- this opens a "Select Color" panel that offer different ways to select a color (on the various tabs at the top)
 - To get back to the other style options, use the back arrow after selecting a color
 - Change the size to 4 mm
-- Click "Simple fill" to change other properties, like stroke (outline) color and width
+- Click "Simple marker" to change other properties, like stroke (outline) color and width
 - To undo a style change, click the orange back-arrow at the bottom of the main style panel
 
 Get information about a point:
