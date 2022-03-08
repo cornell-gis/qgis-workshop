@@ -51,7 +51,7 @@ Load the fire station data:
 You should see a constellation of dots floating in space.  Don't worry -- we'll soon be adding more layers to make a more useful map.
 
 Let's change the layer style by opening the Layer Styling panel - colorful paintbrush icon at top left of the Layers panel
-- Change the color (light blue) -- note that there are several tabs at the top of the "Select Color" panel that offer different ways to select a color.
+- Change the color (light blue) by clicking the color bar -- this opens a "Select Color" panel that offer different ways to select a color (on the various tabs at the top)
 - To get back to the other style options, use the back arrow after selecting a color
 - Change the size to 4 mm
 - Click "Simple fill" to change other properties, like stroke (outline) color and width
