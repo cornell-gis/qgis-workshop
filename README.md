@@ -31,6 +31,8 @@ We will explore several common types of GIS data, using the following example da
 
 # Points
 
+<iframe width="980" height="551" src="https://www.youtube.com/embed/qI5zIOl7D-0" title="QGIS Workshop: Points" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Point data is often found in a tabular format, such as an Excel file or a CSV file.  To use a data table in QGIS, it is usually best to first export the table into a CSV file.  CSV stands for "Comma-Separated Values", and is the format most commonly used to transfer tabular data between different programs.  Whenever a table includes X and Y coordinates -- such as longitude and latitude -- we can use that information to display each row in the table as a point on a map.
 
 Load the fire station data:
