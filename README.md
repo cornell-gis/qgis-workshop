@@ -313,6 +313,6 @@ It is also possible to create a more detailed map layout, with things like a tit
 - [QGIS training manual](https://docs.qgis.org/latest/en/docs/training_manual/)
 - [QGIS Map Showcase](https://www.flickr.com/groups/qgis/pool/) (for inspiration)
 - [QGIS Tutorials and Tips](http://www.qgistutorials.com/en/) by Ujaval Gandhi
-- [Videos from QGIS North America](https://www.youtube.com/channel/UCLQd1MsyWWPoIi6rNLUCjhg/videos) 2020 virtual conference
+- [Videos from QGIS North America](https://www.youtube.com/@qgisnorthamerica1479/streams) 2020 virtual conference
 - [Projection Playground](https://observablehq.com/@floledermann/projection-playground)
 - [Cornell GIS LibGuide](https://guides.library.cornell.edu/gis)
