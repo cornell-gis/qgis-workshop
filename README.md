@@ -1,6 +1,6 @@
 # Intro to QGIS
 
-Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University (revised 2022-03-07)
+Workshop tutorial created by Keith Jenkins <kgj2@cornell.edu>, Mann Library, Cornell University (revised 2023-09-25)
 - <https://cornell-gis.github.io/qgis-workshop/>
 
 This workshop will cover basic tasks using QGIS: loading data, changing the styles used to display the data on a map, installing plugins, using processing tools to do basic analysis, and exporting a finished map image.
@@ -275,12 +275,9 @@ There are many other plugins available for handling special data formats, managi
 - QuickOSM - fetch data from OpenStreetMap
 - qgis2web - export your map as an interactive Leaflet or OpenLayers map for the web
 - Preview Mode Plugin - check how your map appears to people with color blindness
-- Profile Tool - create elevation profile lines
 - Semi-Automatic Classification - remote sensing image download and processing
 - Street View - quickly jump to the nearest Google StreetView image
 - SLYR - import styles from ArcGIS .mxd and .lyr files
-- Visualist - spatial statistics and flow mapping
-
 
 # Exporting your map to an image file
 
