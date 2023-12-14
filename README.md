@@ -8,7 +8,7 @@ This workshop will cover basic tasks using QGIS: loading data, changing the styl
 
 # Before the workshop begins
 
-The Windows computers in Mann Library already have QGIS installed, but if you would like to use your own computer, **please install QGIS on your computer before the workshop**.  QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.  In most cases, you can download and install QGIS on your own computer in under 10 minutes.  (For Windows, we recommend using the latest version of the "Standalone Installer".)
+The Windows computers in Mann Library already have QGIS installed, but if you would like to use your own computer, **please install QGIS on your computer before the workshop**.  QGIS is a free and open source geographic information system that runs on Windows, Mac, and Linux.  In most cases, you can download and install QGIS on your own computer in under 10 minutes.
 - <https://qgis.org/en/site/forusers/download.html>
 
 **Download and unzip the data files for this workshop**:
