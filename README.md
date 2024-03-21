@@ -118,7 +118,7 @@ There are many options that can be configured to improve the appearance of the l
 - Turn off your road labels, since we'll use a basemap instead.
 
 
-# Basemaps via QuickMapServices
+# Plugins: QuickMapServices (basemaps)
 
 Basemaps are web-based map images designed by professional cartographers who have already done the hard work of aggregating different data layers and customizing styles and labels to work at different zoom levels.  Basemaps are usually global in scope, although there are some that only focus on certain regions.  They can be used to add context to your map, or just to help confirm that your data is correctly aligned.  The QuickMapServices plugin makes this easy, but we need to install it first.
 
@@ -270,7 +270,6 @@ Once installed, the "Value Tool" icon will appear in your toolbars.  It looks li
 
 There are many other plugins available for handling special data formats, managing tabular data, performing analysis, creating time-based animations, and interfacing with other programs. Some of our other favorite plugins include:
 - GeoCoding - get point coordinates for placenames and addresses
-- mmqgis - a suite of vector, CSV, and geocoding tools
 - QNEAT3 - supplemental network analysis tools
 - QuickOSM - fetch data from OpenStreetMap
 - qgis2web - export your map as an interactive Leaflet or OpenLayers map for the web
@@ -310,6 +309,5 @@ It is also possible to create a more detailed map layout, with things like a tit
 - [QGIS training manual](https://docs.qgis.org/latest/en/docs/training_manual/)
 - [QGIS Map Showcase](https://www.flickr.com/groups/qgis/pool/) (for inspiration)
 - [QGIS Tutorials and Tips](http://www.qgistutorials.com/en/) by Ujaval Gandhi
-- [Videos from QGIS North America](https://www.youtube.com/@qgisnorthamerica1479/streams) 2020 virtual conference
 - [Projection Playground](https://observablehq.com/@floledermann/projection-playground)
 - [Cornell GIS LibGuide](https://guides.library.cornell.edu/gis)
