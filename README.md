@@ -147,7 +147,7 @@ Turn on the fire station layer, and adjust the label style to improved legibilit
 - 3rd tab (buffer) - Draw text buffer, 1.5mm white
 
 Since the Google Hybrid layer often has the clutter of unwanted points that distract from our fire station points, it will help to use a plainer basemap:
-- Web menu > QuickMapServices > Stamen > Stamen Toner Lite
+- Web menu > QuickMapServices > ESRI > ESRI Gray (light)
 - Uncheck the Google Hybrid layer to hide it
 - Also hide the streets layer
 
